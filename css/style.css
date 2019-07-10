@@ -1,0 +1,764 @@
+/***************************WEB FONT FACE OF PAGE*******************************/
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/AraESNawar-Regular.otf);
+
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url(../fonts/VIP-Hala-Bold.otf);
+}
+
+/***************************BASICS STYLES OF PAGE*******************************/
+h2 {
+    font-family: boldFont;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bolder;
+    font-family: myFirstFont;
+}
+
+.row {
+    margin: 0;
+}
+
+/***************************CAROUSEL STYLE*******************************/
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: right;
+    width: 100%;
+    margin-right: -100%;
+    transition: transform 0.6s ease, opacity .5s ease-out
+}
+.activ{
+    margin-right: 0;
+    margin-left: -100%;
+    overflow: hidden;
+    animation-delay: 6s;
+}
+.carousel-inner > .item {
+    -webkit-transition: 1s ease-in-out left;
+    -moz-transition: 1s ease-in-out left;
+    -o-transition: 1s ease-in-out left;
+    transition: 1s ease-in-out left;
+}
+.carousel-caption h1 {
+    font-size: 54px;
+
+}
+.carousel-inner{
+    overflow: visible;
+}
+.carousel-item h1 {
+    direction: ltr;
+    text-align: left;
+    padding-left: 60%;
+    margin-top:29px;
+}
+
+.carousel-item p {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    opacity: .7;
+    font-size: 20px;
+}
+
+.carousel-item .row {
+    margin-bottom: -38px;
+}
+
+.carousel-item img {
+    margin-bottom: 5%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.bd-example {
+    background-color: #083f85;
+    color: white;
+    background-image: url(../img/background1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.carousel-control-prev-icon {
+    height: 70px;
+    width: 70px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: white;
+    background-image: none;
+    margin: auto;
+}
+
+.carousel-control-prev {
+    right: -7.5%;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev-icon:after {
+    content: url(../img/left-arrow.png);
+    font-size: 55px;
+}
+
+
+
+/***************************NAVBAR STYLE*******************************/
+.navbar {
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.col-sm-8 {
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    display: inline-block;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 4px solid #fcac0c;
+    color: #fcac0c;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+/*
+.bg-light {
+    background-color: transparent !important;
+}
+*/
+.bg-light {
+    background-color: #083f85 !important;
+}
+
+.fixed-top {
+    background-color: #0f0f10 !important;
+}
+
+.navbar-nav button {
+    background-color: #fcac0c;
+    border-style: none;
+    /*    padding: 2% 20% 2% 20%;*/
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.top-left {
+    float: left;
+    margin: 2%;
+}
+
+.justify-content-end .col-sm-3 .gray {
+    height: 100%;
+    width: 100%;
+    background-color: gainsboro;
+    background-image: url(../img/background.png);
+    background-size: auto;
+    background-position: center;
+}
+
+.justify-content-end .col-sm-3 .gray button {
+    background-color: black;
+    color: white;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 14px;
+    width: 100%;
+    height: 40px;
+    margin-top: 13%;
+    word-spacing: 4px;
+}
+
+.yellow-border {
+    width: 9%;
+    height: 2px;
+    background-color: #fcac0c;
+    text-align: center;
+    margin-top: 3%;
+}
+
+/***************************ABOUT STYLE*******************************/
+.procducts img,
+.contact-us img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about .col-md-2 {
+    margin-right: 2%;
+}
+
+.about .img-about img {
+    object-fit: contain;
+    /*width: 124px;*/
+    height: 55px;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    margin-top: 10%;
+}
+
+.about h6 {
+    margin-top: 8%;
+    margin-bottom: 20%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.about p {
+    margin-top: 6%;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.about .yellow-border {
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.about .img-about {
+    margin-top: 6%;
+}
+
+.about .img-about img {
+    border: 2px solid gainsboro;
+    box-sizing: content-box;
+    padding: 40px 0px;
+}
+
+/***************************CLIENT STYLE*******************************/
+.client {
+    background-color: gainsboro;
+}
+
+.client img {
+    width: 150px;
+    margin: auto;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    object-fit: contain;
+    width: 100px;
+    object-position: center;
+    height: 100px;
+}
+
+.owl-carousel .owl-stage-outer {
+    margin-top: 2%;
+}
+
+.owl-carousel {
+    direction: ltr
+}
+
+.owl-carousel .owl-stage-outer {
+    margin-top: 0;
+    padding-top: 2%;
+}
+
+/***************************PROCDUCTS STYLE*******************************/
+.procducts h2 {
+    margin-top: 20%;
+    color: white;
+    padding-right: 20%;
+}
+
+.procducts p {
+    margin: 1%;
+    font-weight: 100;
+    padding-right: 3%;
+    font-size: 14px;
+}
+
+.procducts .product-paragraph {
+    font-size: 20px;
+    opacity: 0.8
+}
+
+.procducts ul {
+    margin-top: 70%;
+    padding-right: 20%;
+}
+
+.procducts .yellow-border {
+    margin-right: 24%;
+    margin-left: 24%;
+    width: 15%;
+}
+
+.procducts ul li {
+    margin-top: 5%;
+}
+
+.procducts ul li {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.procducts svg.svg-inline--fa.fa-angle-left.fa-w-8 {
+    margin-left: 6px;
+}
+
+.procducts ul li:hover {
+    color: #fcac0c;
+}
+
+/*
+.procducts ul li:active{
+    color: gainsboro;
+    opacity: 0.5;
+}
+*/
+.Actived {
+    color: gainsboro;
+    opacity: 0.5;
+}
+
+.procducts .contain-pro p,
+.procducts .contain-pro1 p,
+.procducts .contain-pro2 p {
+    opacity: 0.7;
+}
+
+.procducts .contain-pro h6,
+.procducts .contain-pro1 h6,
+.procducts .contain-pro2 h6 {
+    font-weight: bolder;
+}
+
+.procducts .contain-pro,
+.procducts .contain-pro1,
+.procducts .contain-pro2 {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.procducts .contain-pro1 svg.svg-inline--fa.fa-w-16 {
+    color: blue;
+}
+
+.procducts .contain-pro2 svg.svg-inline--fa.fa-w-16 {
+    color: green;
+}
+
+.procducts .selected {
+    display: none;
+}
+
+.procducts svg.svg-inline--fa.fa-w-16 {
+    font-size: 40px;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    color: #fcac0c;
+}
+
+/***************************GENERAL FEATURES STYLE*******************************/
+.General-Features {
+    background-color: gainsboro;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.General-Features .yellow-border {
+    margin-right: 45%;
+    margin-left: 45%;
+}
+
+.General-Features .row {
+    margin-top: 5%;
+}
+
+.General-Features h2 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.General-Features .features-contain p {
+    display: block;
+    height: 70px;
+    overflow: hidden;
+}
+
+.General-Features .features-contain {
+    background-color: white;
+    border-radius: 4px;
+    /*    height: 164px;*/
+    box-sizing: content-box;
+    margin-bottom: 5%;
+    padding: 8% 6%;
+}
+
+.General-Features .features-contain:hover {
+    outline: 2px solid #fcac0c;
+    outline-offset: 5px;
+    -moz-outline-radius: 4px;
+    box-shadow: 0px 15px 10px -15px #111;
+
+}
+
+.General-Features .features-contain p {
+    margin-top: 2%;
+    opacity: 0.7;
+}
+
+.General-Features .col-md-4,
+.General-Features .col-lg-4 {
+    padding-left: 0px;
+}
+
+.General-Features img {
+    width: 120px;
+    object-fit: contain;
+    height: 100px;
+}
+
+/***************************CONTACT US STYLE*******************************/
+.contact-us form {
+    width: 80%;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    border-style: none;
+    background-color: gainsboro;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.contact-us form input {
+    height: 70px;
+}
+
+.contact-us h2 {
+    margin-top: 5%;
+}
+
+.contact-us p {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.contact-us button {
+    background-color: #fcac0c;
+    border-style: none;
+    padding: 2% 15% 2% 15%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: black;
+}
+
+.form-control:focus {
+    border-color: #fcac0c !important;
+    box-shadow: 0 0 7px #fcac0c !important;
+}
+
+/***************************FOOTER STYLE*******************************/
+footer {
+    background-color: #083f85;
+    color: white;
+    padding: 4% 0 2% 0;
+}
+
+footer img {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: contain;
+    height: 68px;
+}
+
+footer h3 {
+    color: #fcac0c;
+    font-weight: bolder;
+    margin-top: 4%;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-grid;
+    font-size: 16px;
+    margin-left: 40px;
+    padding: 0;
+}
+
+footer svg.svg-inline--fa.fa-w-16,
+footer svg.svg-inline--fa.fa-youtube.fa-w-18 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 9%;
+}
+
+/***************************BOTTOM FOOTER STYLE*******************************/
+.bottom-footer {
+    background-color: #fcac0c;
+}
+
+.bottom-footer p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/***************************MEDIA QUERY STYLE*******************************/
+/*****************CAROUSEL STYLE******************/
+/*smart phones & tablets*/
+@media (min-width:481px) and (max-width:767px) {
+    .pragraph {
+        display: none !important;
+    }
+
+    .carousel-control-prev-icon {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border-style: none;
+        background-image: none;
+    }
+
+    .carousel-item .row {
+        margin-bottom: 0px;
+    }
+
+    .carousel-control-prev {
+        right: -2%;
+    }
+
+    .carousel-control-next-icon {
+        background-image: none;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: "<";
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pragraph {
+        display: none !important;
+    }
+
+    .carousel-item .row {
+        margin-bottom: 0px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    .pragraph {
+        display: none !important;
+    }
+}
+
+/*****************NAVBAR STYLE******************/
+/*smart phones & tablets*/
+@media (min-width:481px) and (max-width:767px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 12px;
+    }
+}
+
+/*****************ABOUT STYLE******************/
+/*smart phones & tablets*/
+/*
+@media (max-width:481px){
+ .about .img-about{
+     margin-top: 1%;
+     color: rebeccapurple;
+}   
+} 
+*/
+@media (min-width:481px) and (max-width:767px) {
+    .about .col-sm-4 {
+        display: none;
+    }
+
+    .about .col-sm-8 {
+        text-align: center;
+    }
+
+    .about .col-md-2 {
+        margin-right: 0;
+    }
+
+    .about .img-about {
+        margin-top: 10px;
+    }
+
+    .about h6 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .about .img-about img {
+        border: 2px solid gainsboro;
+        padding: 40px 0px;
+        width: 124px;
+
+    }
+
+    /*
+  .about .img-about img {
+    object-fit: contain;
+    width: 124px;
+    height: 55px;  
+    }}
+*/
+
+    @media (min-width:481px) and (max-width:991px) {
+        .about .col-sm-8 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:991px) {
+        .about .col-sm-4 {
+            display: none;
+        }
+
+        .about .col-sm-8 {
+            text-align: center;
+        }
+    }
+
+    /*****************CONTACT US STYLE******************/
+    /*smart phones & tablets*/
+    @media (min-width:481px) and (max-width:991px) {
+        .contact-us .col-sm-4 {
+            display: none;
+        }
+
+        .contact-us .col-sm-8 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    /*****************PROCDUCTS STYLE******************/
+    /*smart phones & tablets*/
+    @media (min-width:481px) and (max-width:767px) {
+        .procducts ul {
+            margin-top: 90px;
+        }
+
+        .procducts .col-sm-4 {
+            text-align: center;
+        }
+
+        .procducts .product-paragraph {
+            text-align: center;
+        }
+
+        .procducts h2 {
+            padding-right: 0;
+        }
+
+        .procducts ul {
+            padding-right: 0;
+        }
+
+        .procducts .yellow-border {
+            margin-right: 42%;
+            margin-left: 42%;
+        }
+    }
+
+    /*****************CONTACT US STYLE******************/
+    /*smart phones & tablets*/
+    @media (min-width:481px) and (max-width:767px) {
+        footer ul li {
+            font-size: 12px;
+        }
+
+        footer svg.svg-inline--fa.fa-w-16,
+        footer svg.svg-inline--fa.fa-youtube.fa-w-18 {
+            font-size: 20px;
+
+        }
